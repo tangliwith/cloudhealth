@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/app_bg">
+
+    <include layout="@layout/layout_title"/>
+
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_marginTop="123dp"
+        android:layout_height="118dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="敬请期待，二期更精彩^_^"
+        android:textColor="@color/text_gray999"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_width="290dp"
+        android:layout_height="44dp"
+        android:text="返回首页"
+        android:textColor="@color/white"
+        android:layout_marginTop="119dp"
+        android:gravity="center"
+        android:background="@drawable/shape_tv_back_bg"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>

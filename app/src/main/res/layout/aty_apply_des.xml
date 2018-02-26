@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <include layout="@layout/layout_title"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/text_gray999"
+        android:textSize="@dimen/text_size_15"
+        android:text="1、服务期限
+陪诊服务按单个就诊号收费，仅限当次就诊门诊当天时段使用，陪伴时长不超过4小时。
+2、预约截止时间
+1）陪诊日期为周一至周六，预约截止时间为前一天下午16点前；
+2）陪诊日期为周日及国家法定节假日，则不可预约陪诊，如：元旦、五一、国庆等。
+3、服务退订
+陪诊服务不包含预约挂号，用户可在健康之路或其他渠道预约挂号。如预约挂号取消，需用户自行退订陪诊服务。陪诊申请中的订单，退订服务需在就诊前一天下午16:00前到“我的陪诊”模块中退订。若陪诊已被受理，则无法进行退订，如有疑问，请联系客服400-6677-400进行处理。退订成功后，服务费用的金额将退回到用户健康之路的账户中，可在“可用余额”项中查询。若逾期退订，陪诊费用不予以退款。"
+        />
+
+</LinearLayout>

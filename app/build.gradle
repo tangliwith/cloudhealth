@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+android {
+
+
+//    MD5:  94:81:9A:08:C4:CE:D2:90:D5:FD:E2:B1:6B:CB:D8:98
+//    SHA1: E2:9A:27:C6:9D:1F:26:7E:7E:52:38:10:80:FE:52:03:0E:B4:44:F1
+//    SHA256: 90:13:FB:0A:6E:7D:0B:C1:FF:2C:7F:6A:3E:E3:03:B9:14:68:4E:F3:96:73:07:95:22:5E:AF:BF:56:9B:A3:B0
+    signingConfigs {
+        release {
+            keyAlias 'ecuca'
+            keyPassword 'ecuca2017'
+            storeFile file('/Volumes/Doc/AS_Project/Cloudhealth/cloudhealth.jks')
+            storePassword 'ecuca2017'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.ecuca.cloudhealth"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+////            signingConfig signingConfigs.release
+//        }
+//
+//        debug {
+//            signingConfig signingConfigs.release
+//        }
+//
+//    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //网络请求相关
+    compile 'com.google.code.gson:gson:2.6.2'
+    //    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.zhy:okhttputils:2.5.2'
+    compile 'com.jcodecraeer:xrecyclerview:1.5.3'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    //    compile 'com.githang:status-bar-compat:0.6'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    //状态栏颜色设置
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile project(':ultraviewpager')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile 'com.feezu.liuli:timeselector:1.1.3+'
+    compile 'com.androidkun:XTabLayout:1.1.3'
+    //Rating Bar
+    compile 'com.iarcuschin:simpleratingbar:0.1.5'
+    compile 'com.contrarywind:Android-PickerView:3.2.7'
+    compile project(':Pushlib')
+    compile project(':ucrop')
+    compile 'com.hyman:flowlayout-lib:1.1.2'
+    compile project(path: ':imagepicker')
+    compile project(':indexlib')
+    compile project(path: ':indexlib')
+
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="49dp"
+        android:src="@mipmap/icon_app_logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="47dp"
+        android:layout_height="wrap_content"
+        android:text=" 帮帮买车为一款汽车经纪人及周边从业人员使用的一款专业工具类的APP。\n\n 作为一款服务类的工具APP，主要功能为服务软件客户，解决用户外溢资源及提高购车客户的商业价值。帮帮买车将该类客户信息转化为商业价值的APP。通过线上收集客户信息，线下联系客户促成成交。 "
+        android:textColor="#ff060001"
+        android:textSize="15dp" />
+</LinearLayout>

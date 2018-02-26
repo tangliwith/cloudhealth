@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.ecuca.cloudhealth.View.ShapeImageView
+
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="27dp"
+                    android:src="@mipmap/icon_app_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/app_name"
+                    android:textColor="#ff060001"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="当前版本号：2.0.0"
+                    android:textColor="#ff999999"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginTop="30.5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel_about_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="关于我们"
+                        android:textColor="#ff010101"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_more" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/view_line" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="常见问题"
+                        android:textColor="#ff010101"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_more" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/view_line" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="意见反馈"
+                        android:textColor="#ff010101"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_more" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/view_line" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_contact_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="联系我们"
+                        android:textColor="#ff010101"
+                        android:textSize="15dp" />
+                    <ImageView
+                        android:id="@+id/img_more"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_more" />
+                    <TextView
+                        android:id="@+id/tv_tell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="028-1324 6578"
+                        android:textColor="#ff999999"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.5dp"
+                        android:layout_toLeftOf="@id/img_more"
+                        android:textSize="15dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="96dp"
+                android:text="@string/app_des"
+                android:textColor="#ff999999"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Copyright © 2016 Media Data Systems Pte Ltd Singapore Co. Reg. No."
+                android:textColor="#ff999999"
+                android:layout_marginTop="10dp"
+                android:textSize="9dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

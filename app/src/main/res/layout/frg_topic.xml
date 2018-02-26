@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <include layout="@layout/layout_title"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="8dp">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_search_et_bg"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/icon_doctor_search" />
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="5"
+                    android:background="@null"
+                    android:drawablePadding="20dp"
+                    android:hint="请输入您感兴趣的话题..."
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/otv_do_search"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="搜索"
+                    android:textColor="@color/app_title_top"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ecuca.cloudhealth.MyRecycleVIew.MyRecycleView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.ecuca.cloudhealth.View.DragFloatActionButton
+            android:id="@+id/btn_move"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/icon_pub_topic"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

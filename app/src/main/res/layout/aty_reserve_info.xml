@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <include layout="@layout/layout_title"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="备注信息："
+            android:gravity="center_vertical"
+            android:textColor="#ff666666"
+            android:textSize="13sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/view_line"/>
+
+
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="5"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:textSize="@dimen/text_size_15"
+            android:gravity="left|top"
+            android:textColor="@color/text_gray999"
+            android:hint="请详细描述您的症状、疾病、身体状况等，越详细越好，便于医生更准确的为您分析解答。"
+            android:textColorHint="@color/text_gray999"/>
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/tv_sub"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="提交"
+            android:background="@color/app_title_top"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffffff"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+</LinearLayout>

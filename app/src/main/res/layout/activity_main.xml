@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_line"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <RadioGroup
+            android:id="@+id/main_bottom_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/titleText"
+            android:orientation="horizontal">
+
+
+            <com.ecuca.cloudhealth.View.MyRadioButton
+                android:id="@+id/main_test"
+                style="@style/Main_RG"
+                android:checked="true"
+                custom:my_drawableTop="@drawable/main_index_doctor"
+                custom:my_drawableSize="30dp"
+                android:text="健康"
+                />
+
+
+            <com.ecuca.cloudhealth.View.MyRadioButton
+                android:id="@+id/main_train"
+                style="@style/Main_RG"
+                android:checked="false"
+                custom:my_drawableTop="@drawable/main_index_topic"
+                custom:my_drawableSize="30dp"
+                android:text="话题"
+                />
+            <com.ecuca.cloudhealth.View.MyRadioButton
+                android:id="@+id/main_my"
+                style="@style/Main_RG"
+                android:checked="false"
+                custom:my_drawableTop="@drawable/main_index_me"
+                custom:my_drawableSize="30dp"
+                android:text="我的"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

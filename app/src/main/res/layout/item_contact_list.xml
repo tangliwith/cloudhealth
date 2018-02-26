@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <com.ecuca.cloudhealth.View.CircleImageView
+        android:id="@+id/img_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/headpic" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|bottom"
+                android:text="汤晓君"
+                android:textColor="#ff000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="18312345678"
+                android:textColor="#ff999999"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

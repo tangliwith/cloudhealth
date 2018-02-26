@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+    <include layout="@layout/layout_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_order_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:text="订单号："
+                        android:textColor="#ff666666"
+                        android:textSize="13sp"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/list_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/view_line"/>
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:id="@+id/tv_total_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="￥"
+                            android:layout_alignParentRight="true"
+                           android:gravity="center_vertical"
+                            android:textColor="#ff000000"
+                            android:textSize="15dp"
+                            />
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:layout_toLeftOf="@id/tv_total_price"
+                            android:layout_width="wrap_content"
+                            android:layout_marginRight="7dp"
+                            android:layout_height="match_parent"
+                            android:text="订单合计："
+                            android:textColor="#ff999999"
+                            android:textSize="15dp"
+                            />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="注：支付金额后方可咨询医生，或者预约医生"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="还需支付:"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#ff000000"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/tv_pay_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="¥"
+                    android:gravity="center_vertical"
+                    android:textColor="#ff007aff"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_do_pay"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="match_parent"
+                android:text="立即支付"
+                android:textSize="@dimen/text_size_15"
+                android:textColor="@color/white"
+                android:background="@color/app_title_top"
+                android:gravity="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

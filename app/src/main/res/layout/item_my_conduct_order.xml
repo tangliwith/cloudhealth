@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/app_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_with_time"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="陪诊时间：2017-12-24 周一 08:00"
+            android:textColor="#ff000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:text="待支付"
+            android:textColor="#ff999999"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_hospital_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="成都市第一人民医院"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="#ff010101"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="协助就医服务"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffbbbbbb"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tv_goods_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="￥99.00"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffff5000"
+            android:layout_marginBottom="10dp"
+            android:gravity="right"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_line"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center|right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_bottom_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="放弃咨询"
+            android:gravity="center"
+            android:textColor="#ffff0000"
+            android:textSize="15sp"
+            />
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="21dp"
+            android:background="@color/text_gray999"
+            />
+        <TextView
+            android:id="@+id/tv_bottom_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="立即咨询"
+            android:gravity="center"
+            android:textColor="#37A5ED"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

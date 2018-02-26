@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    
+    <LinearLayout
+        android:id="@+id/lin_user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="92dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <com.ecuca.cloudhealth.View.CircleImageView
+            android:id="@+id/iv_headMenuPic"
+            android:layout_width="89dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="24dp"
+            android:background="@mipmap/headpic" />
+        
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_21"
+            android:text="18523158103"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/img_auth_status"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/icon_home_menu_status"/>
+            <TextView
+                android:id="@+id/tv_auth_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:layout_marginLeft="2.5dp"
+                android:textColor="@color/text_gray999"
+                android:text="认证"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    
+
+<LinearLayout
+    android:id="@+id/lin_wallet"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:src="@mipmap/icon_home_menu_1"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_21"
+        android:textColor="@color/text_black"
+        android:layout_marginLeft="25dp"
+        android:text="我的钱包"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin_team"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:src="@mipmap/icon_home_menu_2"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_21"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="25dp"
+            android:text="我的团队"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:src="@mipmap/icon_home_menu_3"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_21"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="25dp"
+            android:text="推荐帮帮"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:src="@mipmap/icon_home_menu_4"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_21"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="25dp"
+            android:text="关于帮帮"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin_system_setting"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:src="@mipmap/icon_home_menu_5"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_21"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="25dp"
+            android:text="系统设置"
+            />
+    </LinearLayout>
+</LinearLayout>

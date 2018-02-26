@@ -1,0 +1,116 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SpotsDialogDefault" parent="AppTheme.NoActionBar">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Loading…</item>
+        <item name="DialogSpotCount">5</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- AlertChooser Theme -->
+    <style name="AlertChooser" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AlertChooserAnimation</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+    <!-- AlertChooser Animation -->
+    <style name="AlertChooserAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/fynn_alertchooser_animation_in</item>
+        <item name="android:windowExitAnimation">@anim/fynn_alertchooser_animation_out</item>
+    </style>
+    <style name="Main_RG">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_userhome_rb_textcolor</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:scaleX">0.9</item>
+        <item name="android:scaleY">0.9</item>
+    </style>
+
+    <style name="Main_RG11">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_my_all_call_rb_textcolor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:scaleX">1</item>
+        <item name="android:scaleY">1</item>
+    </style>
+
+
+        <!--name为声明的"属性集合"名，可以随便取，但是最好是设置为跟我们的View一样的名称-->
+        <declare-styleable name="MyView">
+            <!--声明我们的属性，名称为default_size,取值类型为尺寸类型（dp,px等）-->
+            <attr name="default_size" format="dimension" />
+        </declare-styleable>
+    <style name="CustomRadioBtn">
+        <item name="android:button">@drawable/mycustome_radio_selctor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">15.5dp</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+
+    <style name="fiveRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_evaluate</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:height">25dp</item>
+        <item name="android:maxHeight">25dp</item>
+        <item name="android:minWidth">40dp</item>
+        <item name="android:maxWidth">40dp</item>
+    </style>
+
+    <style name="mProgress_horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_horizontal</item><!-- progress_horizontal -->
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+
+    <style name="transparentFrameWindowStyle1" parent="@style/AppTheme.NoActionBar">
+
+        <item name="android:windowBackground">@null</item>
+    </style>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff37a5ed</color>
+    <color name="colorPrimaryDark">#ff37a5ed</color>
+    <color name="colorAccent">#ff37a5ed</color>
+    <color name="spots_dialog_color">#ff0099cc</color>
+    <color name="app_bg">#F6F6F6</color>
+    <color name="app_title_write">#FFFFFF</color>
+    <color name="app_title_top">#ff37a5ed</color>
+    <color name="bottom_text">#868686</color>
+    <color name="view_line">#ffdddddd</color>
+    <color name="text_gray1">#b2b2b2</color>
+    <color name="text_gray2">#868686</color>
+    <color name="text_gray3">#565656</color>
+    <color name="text_black">#000000</color>
+    <color name="text_hint">#BBBBBB</color>
+    <color name="text_blue">#37A5ED</color>
+    <color name="text_money">#FF5000</color>
+    <color name="text_gray333">#333333</color>
+    <color name="text_gray666">#666666</color>
+    <color name="text_gray999">#999999</color>
+    <color name="titleText">#FFFFFF</color>
+    <color name="lightColorAccent">#30FF4081</color>
+    <color name="dark_black">#30262626</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent2">#10000000</color>
+    <color name="transparent1">#3006003c</color>
+    <color name="agora_blue">#FF00A0EB</color>
+    <color name="app_blue">#4778C7</color>
+    <color name="white">#ffffffff</color>
+    <color name="app_orange">#FF5305</color>
+    <color name="app_red">#FF0024</color>
+    <color name="red">#FF0000</color>
+
+    <color name="app_home_main_blue_99">#993F42C6</color>
+
+    <color name="link_1">#21C4FD</color>
+    <color name="link_2">#FFA83C</color>
+    <color name="link_3">#FF6B57</color>
+
+    <color name="partTranslucent">#39000000</color>
+</resources>

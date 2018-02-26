@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+
+        <LinearLayout
+            android:id="@+id/find_doctor_btn_1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_find_doctor_1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/find_doctor_btn_2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+
+            android:background="@mipmap/icon_find_doctor_2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/find_doctor_btn_3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_find_doctor_3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/find_doctor_btn_4"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_find_doctor_4"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="热门医生"
+            android:textColor="#ff333333"
+            android:textSize="15sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rel_more"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_more" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:gravity="center_vertical"
+                android:text="查看全部"
+                android:textColor="#ff999999"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

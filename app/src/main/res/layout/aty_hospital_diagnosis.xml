@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:text="请填写预约信息"
+                        android:textColor="@color/text_gray666"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/view_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/tel_choose_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="选择地区："
+                            android:textColor="#ff010101"
+                            android:textSize="15sp" />
+
+
+                        <ImageView
+                            android:id="@+id/img_1"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/icon_more" />
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/img_1"
+                            android:text="请选择省市"
+                            android:textColor="#ffbbbbbb"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/view_line" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/tel_choose_hospital"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="选择医院："
+                            android:textColor="#ff010101"
+                            android:textSize="15sp" />
+
+
+                        <ImageView
+                            android:id="@+id/img_2"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/icon_more" />
+
+                        <TextView
+                            android:id="@+id/tv_hospital"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/img_2"
+                            android:text="请选择医院"
+                            android:textColor="#ffbbbbbb"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/view_line" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/tel_choose_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="陪诊时间："
+                            android:textColor="#ff010101"
+                            android:textSize="15sp" />
+
+
+                        <ImageView
+                            android:id="@+id/img_3"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/icon_more" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/img_3"
+                            android:text="请选择陪诊时间"
+                            android:textColor="#ffbbbbbb"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/view_line" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="联系人："
+                            android:textColor="#ff010101"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/tv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="请输入联系人姓名"
+                            android:textColor="@color/text_gray999"
+                            android:textColorHint="@color/text_hint"
+                            android:textSize="@dimen/text_size_15" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/view_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="联系电话："
+                            android:textColor="#ff010101"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/tv_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="请输入联系人电话"
+                            android:inputType="phone"
+                            android:textColor="@color/text_gray999"
+                            android:textColorHint="@color/text_hint"
+                            android:textSize="@dimen/text_size_15" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:text="请选择服务"
+                        android:textColor="@color/text_gray666"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/view_line" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:id="@+id/rel_service_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="54dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_service_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:checked="true" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="18dp"
+                                android:layout_toRightOf="@id/rb_service_1"
+                                android:text="协助就医服务"
+                                android:textColor="#ff000000"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:id="@+id/img_service_1"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/icon_more_bottom" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_service_1_des"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="诊前关怀、亲情式全程陪同、手续代办（取号、缴费、取药）、协助就诊、协助检查以及后续疾病跟踪咨询等一站式服务。"
+                            android:textColor="@color/text_gray999"
+                            android:textSize="@dimen/text_size_14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/view_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:id="@+id/rel_service_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="54dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_service_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true" />
+
+
+                            <TextView
+                                android:id="@+id/tv_111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="18dp"
+                                android:layout_toRightOf="@id/rb_service_2"
+                                android:text="全程陪诊服务"
+                                android:textColor="#ff000000"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="1dp"
+                                android:layout_toRightOf="@id/tv_111"
+                                android:text="（VIP服务）"
+                                android:textColor="#ffff5000"
+                                android:textSize="15sp" />
+
+
+                            <ImageView
+                                android:id="@+id/img_service_2"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/icon_more" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_service_2_des"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="诊前关怀、亲情式全程陪同、手续代办（取号、缴费、取药）、协助就诊、协助检查以及后续疾病跟踪咨询等一站式服务。"
+                            android:textColor="@color/text_gray999"
+                            android:textSize="@dimen/text_size_14"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+
+                    android:background="@color/view_line" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@color/app_bg" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <RadioButton
+                android:id="@+id/rb_is_agree"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:layout_weight="0.6" />
+
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我已阅读"
+                    android:textColor="#ff000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_agree_des"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="《申请须知》"
+                    android:textColor="#ff007aff"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sub"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/app_title_top"
+                android:gravity="center"
+                android:text="立即申请"
+                android:textColor="#ffffffff"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
